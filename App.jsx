@@ -1,5 +1,5 @@
 import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View } from "react-native";
+import { Image, StyleSheet, Text, View } from "react-native";
 import { SafeAreaView, SafeAreaProvider } from "react-native-safe-area-context";
 
 export default function App() {
@@ -12,12 +12,11 @@ export default function App() {
               style={{
                 alignItems: "center",
                 justifyContent: "center",
-                backgroundColor: "red",
                 width: 75,
                 height: 75,
               }}
             >
-              <Text style={{ fontSize: 18, fontWeight: "500" }}>Logo</Text>
+              <Image style={{width: 50, height: 50}} source={require("./assets/adaptive-icon.png")} />
             </View>
             <View style={{ justifyContent: "center" }}>
               <Text style={{ fontSize: 30, fontWeight: "900", color: "white" }}>
